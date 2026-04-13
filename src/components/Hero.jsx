@@ -1,9 +1,10 @@
 import React from 'react';
 import GithubIcon from './GithubIcon';
+import { Download } from 'lucide-react';
 import { PORTFOLIO_DATA } from '../constants/portfolioData';
 
 const Hero = () => {
-  const { avatar, firstName, lastName, role, description, ctaPrimary, ctaSecondary } = PORTFOLIO_DATA.hero;
+  const { avatar, firstName, lastName, role, description, ctaPrimary, ctaSecondary, ctaTertiary } = PORTFOLIO_DATA.hero;
 
   return (
     <section className="py-24 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
@@ -18,9 +19,12 @@ const Hero = () => {
         <br />
         {description}
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <a href={ctaPrimary.href} className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg shadow-orange-600/20">
           {ctaPrimary.label}
+        </a>
+        <a href={ctaTertiary.href} download="CV_LyVuQuocHuy.pdf" className="bg-transparent border-2 border-orange-600/50 hover:border-orange-500 hover:bg-orange-500/10 text-orange-500 px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2">
+          <Download size={20} /> {ctaTertiary.label}
         </a>
         <a href={ctaSecondary.href} target="_blank" rel="noreferrer" className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2">
           <GithubIcon size={20} /> {ctaSecondary.label}

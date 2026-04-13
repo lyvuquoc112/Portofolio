@@ -22,6 +22,10 @@ export const PORTFOLIO_DATA = {
     ctaSecondary: {
       label: "GitHub",
       href: "https://github.com/lyvuquoc112"
+    },
+    ctaTertiary: {
+      label: "Download CV",
+      href: "/CV_LyVuQuocHuy.pdf"
     }
   },
   about: {

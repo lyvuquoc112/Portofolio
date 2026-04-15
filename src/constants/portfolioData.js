@@ -25,7 +25,7 @@ export const PORTFOLIO_DATA = {
     },
     ctaTertiary: {
       label: "Download CV",
-      href: "/CV_LyVuQuocHuy.pdf"
+      href: "/SE192940_LY VU QUOC HUY.pdf"
     }
   },
   about: {

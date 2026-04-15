@@ -59,7 +59,7 @@ export const PORTFOLIO_DATA = {
         tag: "Next.js + TypeScript Project",
         title: "CycleX - E-commerce For Cycling",
         description: "A specialized e-commerce platform for bicycles. I was responsible for building the complete flow for Authentication, Product Listings, and the Seller Dashboard.",
-        techStack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS'],
+        techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
         githubUrl: "https://github.com/lyvuquoc112/CycleX.git",
         githubLabel: "View on GitHub",
         quote: "\"Successfully resolved REST API data mismatch challenges.\"",
